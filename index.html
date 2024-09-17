@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Editable Resume Builder</h1>
+
+    <form id="resume-form">
+
+    <fieldset>
+        <legend>
+    <h3>Personal Information</h3></legend>
+    <label for="name">Name</label>
+    <input type="text"id="name"placeholder="Enter your name"required>
+
+<label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+
+<label for="number">Number</label>
+    <input type="number" id="number" placeholder="Enter your number" required />
+</fieldset>
+
+<Fieldset>
+    <legend>Education</legend>
+<label for="education">Education</label>
+<textarea  id="education" placeholder="Enter your education"rows="4"required></textarea>
+</fieldset>
+
+<fieldset>
+   <legend>Experience</legend>
+   <label for="Experience"></label>
+   <textarea  id="experience" placeholder="Enter your experience"rows="4"required></textarea>
+</fieldset>
+
+<fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills"></label>
+    <textarea  id="skills" placeholder="Enter your skills"rows="4"required></textarea>
+</fieldset>
+
+<button type="submit"><b>Genrate Resume</b></button>
+    </form>
+    <br>
+<!-- Dynamically Editable Generated Resume will appear here -->
+    <div id="resume-display"contenteditable="true">
+      </div>
+      <script src="script1.js"></script>
+    
+</body>
+</html>
